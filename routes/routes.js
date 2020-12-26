@@ -1,7 +1,7 @@
 const controller = require('../controller/controller');
 const auth = require('../controller/auth');
 
-// Express route handler
+// Express route handler - It allows chaining of routes
 module.exports = function(app){
     app.route('/').get(controller.getDefault);
     app.route('/loginuser').post(controller.loginUser);
